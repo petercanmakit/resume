@@ -1,4 +1,5 @@
 \documentclass[a4paper]{deedy-resume} 
+% \documentclass[letterpaper]{deedy-resume} 
 \usepackage{fixltx2e}
 \usepackage{hyperref}
 \usepackage{color}
@@ -15,7 +16,7 @@
 %	NAME
 \Huge \textbf{JIAJUN ZHANG}\\
 \end{center}
-
+\smallskip
 %
 %----------------------------------------------------------------------------------------
 %	LEFT CONTACT
@@ -24,7 +25,7 @@
 \begin{minipage}[t]{0.49\textwidth} 
 \textbf{Address:} \color{gray} 526 W 123 ST, New York, 10027 \\
 \textbf{Email:} \href{mailto:z.jiajun@colum“bia.edu} {\url{ z.jiajun@columbia.edu}} \\
-\textbf{Phone:} (917)-640-3324
+\textbf{Phone:} 917-640-3324
 \end{minipage} 
 \hfill
 %
@@ -37,7 +38,7 @@
 \textbf{LinkedIn: }\url{http://linkedin.com/in/zhang-jiajun}\\
 \textbf{GitHub: } \url{https://github.com/petercanmakit}
 \end{minipage}
-\sectionspace
+\smallskip
 
 
 %----------------------------------------------------------------------------------------
@@ -103,7 +104,7 @@ Flask \textbullet{} PostgreSQL \textbullet{} SQLAlchemy
 \sectionspace 
 
 \subsection{Front end}
-JavaScript \textbullet{} HTML \textbullet{} CSS \textbullet{} JQuery
+HTML \textbullet{} CSS  \textbullet{}  JavaScript \textbullet{} jQuery
 \sectionspace 
 
 \subsection{Other}
@@ -112,10 +113,13 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 \sectionspace
 
 \section{Awards}
+\vspace{0.2cm}
+\setlength{\leftmargini}{1em}
+\begin{tightitemize}
+\item First Prize in the National Undergraduate Electronic Design Contest, Zhejiang Prov. | 2015
+\item ISEE Texas Instruments College Student Grant, Zhejiang University | 2014-2015
+\end{tightitemize}
 
-\textbullet{} First Prize in the National Undergraduate Electronic Design Contest, Zhejiang Prov. | 2015
-\\
-\textbullet{} ISEE Texas Instruments College Student Grant, Zhejiang University | 2014-2015
 
 \sectionspace
 
@@ -131,30 +135,64 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 %
 \begin{minipage}[t]{0.66\textwidth} 
 
-\section{Experience}
+\section{Work Experience}
 
-\runsubsection{Full Stack Developer} |\descript{\small Interactive Pedestrian Injury Mapper Web App, \url{https://petercanmakit.github.io/IPIM/} }
+\runsubsection{Full Stack Developer} |\descript{\small Interactive Pedestrian Injury Mapper Web App, (\url{https://petercanmakit.github.io/IPIM/} )}
 
 \location{May 2017 - Aug 2017, Columbia University Medical Center, New York, NY}
 \vspace{\topsep} 
 \begin{tightitemize}
 \item Used \textbf{Google Maps} to develop an interface for victims to visualize the route on which they were hit by a vehicle
-\item Built a questionnaire view to collect victimsâ€™ information
-\item Implemented monitoring methods of the user behavior when answering
+\item Built a questionnaire view to collect victims' information, and embedded methods for monitoring the user behavior
 \item Worked with \textbf{PostGIS} extension on \textbf{PostgreSQL} for location storing
-\item Created an admin interface to retrieve data and display the statistics about the datasets with \textbf{Chart.js} and clusters the spots of accidents on maps
+\item Created an admin interface to retrieve data and provide the statistics about the datasets using \textbf{Chart.js}, and to cluster the accident spots on the map
 \item Built a wrapper (\href{https://github.com/petercanmakit/gapy}{\url{Gapy}}) for \textbf{Google Analytics} to retrieve page views and event tracker information so that it makes constructions on \textbf{Flask} server app easier
 \end{tightitemize}
 
+
+\sectionspace
+
+\section{Project Experience}
+
+\descript{UdpChat [Java, Socket Programming]}
+
+\location{Feb 2017 - Mar 2017, Columbia University}
+\begin{tightitemize}
+\item Developed a P2P chat program with functionalities of online / offline chatting
+\item Built the server as it broadcasts the contact information of all users and manages messages for offline users
+\item Applied acknowledgment messages to provide reliable communication
+\end{tightitemize}
 \sectionspace 
+
+\descript{HTTP Server [Linux, C , Socket Programming]}
+
+\location{Jan 2017 - Feb 2017, Columbia University}
+\begin{tightitemize}
+\item Built a web server which handles HTTP requests, using socket programming
+\item Starting from single process, developed to multiple processes and threads in order to increase throughput
+\end{tightitemize}
+\sectionspace 
+
+\descript{Other Projects}
+\begin{tightitemize}
+\item Built an image processing webpage (\href{https://petercanmakit.github.io/imgProc/}{\url{imgProc}}) [JavaScript]
+\item Created a music sharing \textbf{Web App} [Python, SQL, Google Cloud, Flask] 
+\item Built a linear \textbf{File System} on loop devices [Linux Kernel, C]
+\item Implemented a Random-Robin \textbf{Task Scheduler} [Linux Kernel, C]
+\item Wrote a program to simulate Go-Back-N Transfer Protocol and Distance Vector Routing Algorithm [Java, Socket Programming]
+\item Created a research tool for motor collision analysis [Hadoop, Pyspark]
+\end{tightitemize}
+\sectionspace 
+
+
+\section{Research Experience}
 
 \runsubsection{Teaching Assistant} |\descript{\small CSEE 4119 Computer Networks}
 
 \location{Sep 2017 - present, Columbia University, New York, NY}
 \begin{tightitemize}
-\item Provide weekly individual instruction and guidance to students
-\item Answer questions asked by students after class
-\item Cooperate with the professor and the TA team to assess the written assignments, the programming projects, and the exams
+\item Provide weekly individual instruction and guidance to students]
+\item Cooperate with the TA team to help the professor assess exams, written assignments  and programming projects
 \end{tightitemize}
 
 \sectionspace 
@@ -171,37 +209,6 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 \sectionspace
 
 \sectionspace
-
-\section{Projects}
-
-\descript{UdpChat [Java, Socket Programming]}
-
-\location{Feb 2017 - Mar 2017, Columbia University}
-\begin{tightitemize}
-\item Developed a P2P chat program with functionalities of online / offline chatting
-\item Built the server as it broadcasts the contact information of all users and receives / sends messages for offline users
-\item Applied acknowledgment messages to provide reliable communication
-\end{tightitemize}
-\sectionspace 
-
-\descript{HTTP Server [Linux, C , Socket Programming]}
-
-\location{Jan 2017 - Feb 2017, Columbia University}
-\begin{tightitemize}
-\item Built a web server which handles HTTP requests, using socket programming with C language on Linux
-\item Starting from single process, developed to multiple processes and threads in order to increase throughput
-\end{tightitemize}
-\sectionspace 
-
-\descript{Other Projects}
-\begin{tightitemize}
-\item Created a Music Sharing Web App [Python, SQL, Google Cloud, Flask] 
-\item Implemented a Linear File System on loop devices [Linux Kernel, C]
-\item Implemented a Random-Robin Task Scheduler [Linux Kernel, C]
-\item Wrote a program to simulate Go-Back-N Transfer Protocol and Distance Vector Routing Algorithm [Java, Socket Programming]
-\item Created a Research Tool for motor collision analysis [Hadoop, Pyspark]
-\end{tightitemize}
-\sectionspace 
 
 
 \end{minipage}
