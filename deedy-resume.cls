@@ -10,6 +10,7 @@
 
 \usepackage[hmargin=0.70cm, vmargin=1.55cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
+\usepackage{color}
 
 %----------------------------------------------------------------------------------------
 %	COLORS
