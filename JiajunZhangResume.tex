@@ -4,12 +4,12 @@
 \usepackage{hyperref}
 \usepackage{color}
 \usepackage[document]{ragged2e}
-
+\pagestyle{empty}
 \begin{document}
 \justify
 
 %----------------------------------------------------------------------------------------
-%	TITLE SECTION
+%	TITLE SECTIO½N
 %----------------------------------------------------------------------------------------
 \begin{flushleft}
 %	NAME
@@ -45,7 +45,7 @@
 \subsection{Columbia University}
 
 \descript{M.S. Computer Engineering}
-\location{Expected Dec 2017 | GPA: 3.54}
+\location{\textbf{\color{black}Expected Dec 2017} | GPA: 3.54}
 
 \sectionspace 
 
@@ -121,11 +121,11 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 %	RIGHT COLUMN
 %----------------------------------------------------------------------------------------
 %
-\begin{minipage}[t]{0.66\textwidth} 
+\begin{minipage}[t]{0.69\textwidth} 
 
 \section{Work Experience}
 
-\runsubsection{Full Stack Developer} |\descript{\small Interactive Pedestrian Injury Mapper Web App, \color{gray}\url{https://petercanmakit.github.io/IPIM/} }
+\runsubsection{Full Stack Developer} |\descript{\small Interactive Pedestrian Injury Mapper Web App, \color{gray}\url{https://petercanmakit.github.io/IPIM/}} \emph{[Python, Flask, JavaScript, PostgreSQL]}\\
 
 \location{May 2017 - Aug 2017, Columbia University Medical Center, New York, NY}
 \vspace{\topsep} 
@@ -142,19 +142,23 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 
 \section{Project Experience}
 
-\descript{UdpChat [Java, Socket Programming]}
-
-\location{Feb 2017 - Mar 2017, Columbia University}
+\descript{Search Query Expansion} \emph{[Java, Google CSE]}, \descript{\color{headings}Sep 2017 - Oct 2017}\\
 \begin{tightitemize}
-\item Developed a P2P chat program with functionalities of online / offline chatting
-\item Built the server as it broadcasts the contact information of all users and manages messages for offline users
-\item Applied acknowledgment messages to provide reliable communication
+\item Built an information retrieval system based on Google CSE API
+\item Implemented Rocchio algorithm to reformulate the seed query to improve retrieval performance
+\item Boosted the average accuracy up to 90\% under two iterations
 \end{tightitemize}
 \sectionspace 
 
-\descript{HTTP Server [Linux, C , Socket Programming]}
+\descript{UdpChat} \emph{[Java, Socket Programming]}, \descript{\color{headings}Feb 2017 - Mar 2017}\\
+\begin{tightitemize}
+\item Developed a P2P chatbot with functionalities of online/offline chatting
+\item Built the server as it broadcasts the contact information of all users and manages messages for offline users
+\item Applied acknowledgment protocol to provide reliable communication
+\end{tightitemize}
+\sectionspace 
 
-\location{Jan 2017 - Feb 2017, Columbia University}
+\descript{HTTP Server} \emph{[Linux, C , Socket Programming]}, \descript{\color{headings}Jan 2017 - Feb 2017}\\
 \begin{tightitemize}
 \item Built a web server which handles HTTP requests, using socket programming
 \item Starting from single process, developed to multiple processes and threads in order to increase throughput
@@ -163,12 +167,12 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 
 \descript{Other Projects}
 \begin{tightitemize}
-\item Built an image processing webpage (\href{https://petercanmakit.github.io/imgProc/}{\color{gray}\url{imgProc}}) [JavaScript]
-\item Created a music sharing \textbf{Web App} [Python, SQL, Google Cloud, Flask] 
-\item Built a linear \textbf{File System} on loop devices [Linux Kernel, C]
-\item Implemented a Random-Robin \textbf{Task Scheduler} [Linux Kernel, C]
-\item Wrote a program to simulate Go-Back-N Transfer Protocol and Distance Vector Routing Algorithm [Java, Socket Programming]
-\item Created a research tool for motor collision analysis [Hadoop, Pyspark]
+\item Built an image processing webpage (\href{https://petercanmakit.github.io/imgProc/}{\color{gray}\url{imgProc}}) \emph{[JavaScript]}
+\item Created a music sharing \textbf{Web App} \emph{[Python, SQL, Google Cloud, Flask]}
+\item Built a linear \textbf{File System} on loop devices \emph{[Linux Kernel, C]}
+\item Implemented a Random-Robin \textbf{Task Scheduler} \emph{[Linux Kernel, C]}
+\item Simulated Go-Back-N Transfer Protocol and Distance Vector Routing Algorithm \emph{[Java, Socket Programming]}
+\item Created a research tool for motor collision analysis \emph{[Hadoop, Pyspark]}
 \end{tightitemize}
 \sectionspace 
 
@@ -179,7 +183,7 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 
 \location{Sep 2017 - present, Columbia University, New York, NY}
 \begin{tightitemize}
-\item Provide weekly individual instruction and guidance to students]
+\item Provide weekly individual instruction and guidance to students
 \item Cooperate with the TA team to help the professor assess exams, written assignments  and programming projects
 \end{tightitemize}
 
@@ -190,7 +194,7 @@ Linux \textbullet{} Git \textbullet{} Google Cloud Platform
 \location{Nov 2015 - May 2016, Zhejiang University, Hangzhou, China}
 \begin{tightitemize}
 \item Utilized \textbf{OpenCV} to extract the directional field and preprocess it
-\item Implemented a Random Forest algorithm with \textbf{scikit-learn} to enhance the palmprint directional field
+\item Implemented Random Forest algorithm with \textbf{scikit-learn} to enhance the palmprint directional field
 \item Wrote a \textbf{Python} visualization tool to analyze the enhanced directional field
 \end{tightitemize}
 
